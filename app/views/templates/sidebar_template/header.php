@@ -8,13 +8,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sidebar Header</title>
+  <title><?= $data['title']; ?> | Laskar Covid</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../css/simple-sidebar.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/css/simple-sidebar.css" rel="stylesheet">
+  <!-- <link href="<?= BASEURL; ?>/css/sb-admin-2.min.css" rel="stylesheet"> -->
 
 </head>
 
