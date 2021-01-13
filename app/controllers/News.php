@@ -11,4 +11,25 @@ class News extends Controller
     $this->view('news/index');
     $this->view('templates/sidebar_template/footer');
   }
+
+  public function kedatangan()
+  {
+    $data['title'] = 'Info Kedatangan';
+    $data['testing'] = $this->model('Testing_model')->testing();
+
+    $this->view('templates/sidebar_template/header', $data);
+    $this->view('templates/sidebar_template/sidebar_wrapper');
+    $this->view('news/kedatangan', $data);
+    $this->view('templates/sidebar_template/footer');
+  }
+
+  public function kesehatan()
+  {
+    $data['title'] = 'Info Kesehatan';
+
+    $this->view('templates/sidebar_template/header', $data);
+    $this->view('templates/sidebar_template/sidebar_wrapper');
+    $this->view('news/kesehatan');
+    $this->view('templates/sidebar_template/footer');
+  }
 }
