@@ -6,6 +6,7 @@
     <a href="<?= BASEURL; ?>/about/" class="list-group-item list-group-item-action bg-danger text-white">About Us</a>
     <a href="<?= BASEURL; ?>/news/" class="list-group-item list-group-item-action bg-danger text-white">News & Info</a>
     <a href="<?= BASEURL; ?>/events/" class="list-group-item list-group-item-action bg-danger text-white">Events</a>
+    <a href="<?= BASEURL; ?>/gallery/" class="list-group-item list-group-item-action bg-danger text-white">Gallery</a>
   </div>
 </div>
 <!-- /#sidebar-wrapper -->

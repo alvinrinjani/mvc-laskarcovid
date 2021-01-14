@@ -3,12 +3,32 @@
   <hr>
   <a href="<?= BASEURL; ?>/news/kesehatan" class="badge badge-warning">Data Kesehatan</a>
   <a href="<?= BASEURL; ?>/news/kedatangan" class="badge badge-success">Data Kedatangan Santri</a>
+  <hr>
+  <h3>Info Kedatangan Santri PRISTAC 1</h3>
 
-  <ul class="list-group mt-3 col-6">
-    <?php foreach ($data['testing'] as $test) : ?>
-      <li class="list-group-item d-flex justify-content-between align-items-center"><?= $test['nama']; ?>
-        <a href="<?= BASEURL; ?>/testing/detail/<?= $test['id']; ?>" class="badge badge-primary">Detail</a>
-      </li>
-    <?php endforeach; ?>
-  </ul>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">Nama</th>
+        <th scope="col">Waktu Kedatangan</th>
+        <th scope="col">Keterangan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php $i = 1; ?>
+      <?php foreach ($data['testing'] as $test) : ?>
+        <tr>
+          <td><?= $i; ?></td>
+          <td><?= $test['nama']; ?></td>
+          <td><?= $test['date']; ?></td>
+          <td><?= $test['keterangan']; ?></td>
+        </tr>
+        <?php $i++; ?>
+      <?php endforeach; ?>
+    </tbody>
+  </table>
+
+
+
 </div>

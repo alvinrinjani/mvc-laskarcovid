@@ -2,7 +2,8 @@
 
 class Testing_model
 {
-  private $table = 'testing_table';
+  private $table_kedatangan = 'kedatangan';
+  private $tabel_detail = 'detail';
   private $db;
 
   public function __construct()
@@ -12,13 +13,13 @@ class Testing_model
 
   public function testing()
   {
-    $this->db->query('SELECT * FROM ' . $this->table);
+    $this->db->query('SELECT * FROM ' . $this->table_kedatangan);
     return $this->db->resultSet();
   }
 
   public function testing_detail($id)
   {
-    $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id=:id');
+    $this->db->query('SELECT * FROM ' . $this->tabel_detail . ' WHERE id=:id');
     $this->db->bind('id', $id);
     return $this->db->single();
   }
