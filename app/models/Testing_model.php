@@ -23,4 +23,19 @@ class Testing_model
     $this->db->bind('id', $id);
     return $this->db->single();
   }
+
+  public function inputDatang($data)
+  {
+    $query = "INSERT INTO kedatangan
+              VALUES
+              ('', :nama, :waktu, :keterangan)";
+
+    $this->db->query($query);
+    $this->db->bind('nama', $data['nama']);
+    $this->db->bind('waktu', $data['waktu']);
+    $this->db->bind('keterangan', $data['keterangan']);
+
+    $this->db->execute();
+    return $this->db->rowCount();
+  }
 }
