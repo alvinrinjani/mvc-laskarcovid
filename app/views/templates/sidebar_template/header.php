@@ -15,6 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="<?= BASEURL; ?>/css/simple-sidebar.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/css/css-laskarcovid.css" rel="stylesheet">
 
 </head>
 

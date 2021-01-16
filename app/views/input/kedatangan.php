@@ -1,8 +1,9 @@
 <div class="container-fluid">
   <h1 class="mt-4"><strong>Input Data</strong></h1>
   <hr>
-  <a href="<?= BASEURL; ?>/input/kesehatan" class="badge badge-warning">Kesehatan</a>
   <a href="<?= BASEURL; ?>/input/kedatangan" class="badge badge-success">Kedatangan</a>
+  <a href="<?= BASEURL; ?>/input/kesehatan" class="badge badge-warning">Kesehatan</a>
+  <a href="<?= BASEURL; ?>/input/sakit" class="badge badge-danger">Sakit</a>
 
 
   <form action="<?= BASEURL; ?>/input/inputDatang" method="post" class="m-3">
@@ -21,13 +22,10 @@
     </div>
     <div class="form-group row">
       <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary" name="submit">Submit Data Kedatangan</button>
+        <button type="submit" class="btn btn-primary" name="submit">Tambah Data Kedatangan</button>
       </div>
     </div>
   </form>
-
-
-
   <!-- <h3>Jadwal Kedatangan Santri PRISTAC 1</h3>
   <p>
     <em>

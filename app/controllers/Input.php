@@ -39,4 +39,27 @@ class Input extends Controller
       exit;
     }
   }
+
+  public function sakit()
+  {
+    $data['title'] = 'Input Santri Sakit';
+
+    $this->view('templates/sidebar_template/header', $data);
+    $this->view('templates/sidebar_template/sidebar_wrapper');
+    $this->view('input/sakit');
+    $this->view('templates/sidebar_template/footer');
+  }
+
+  public function inputSakit()
+  {
+    if ($this->model('Testing_model')->inputSakit($_POST) > 0) {
+      Flasher::setFlash('berhasil', 'ditambahkan', 'warning');
+      header('Location:' . BASEURL . '/input/sakit');
+      exit;
+    } else {
+      Flasher::setFlash('gagal', 'ditambahkan', 'danger');
+      header('Location:' . BASEURL . '/input/sakit');
+      exit;
+    }
+  }
 }

@@ -1,8 +1,9 @@
 <div class="container-fluid">
   <h1 class="mt-4"><strong>Input Data</strong></h1>
   <hr>
-  <a href="<?= BASEURL; ?>/input/kesehatan" class="badge badge-warning">Kesehatan</a>
   <a href="<?= BASEURL; ?>/input/kedatangan" class="badge badge-success">Kedatangan</a>
+  <a href="<?= BASEURL; ?>/input/kesehatan" class="badge badge-warning">Kesehatan</a>
+  <a href="<?= BASEURL; ?>/input/sakit" class="badge badge-danger">Sakit</a>
   <!-- <h3>Jadwal Kedatangan Santri PRISTAC 1</h3>
   <p>
     <em>

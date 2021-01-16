@@ -8,6 +8,7 @@
 <script src="<?= BASEURL; ?>/js/jquery.min.js"></script>
 <script src="<?= BASEURL; ?>/js/bootstrap.bundle.min.js"></script>
 <script src="<?= BASEURL; ?>/js/sb-admin-2.min.js"></script>
+<script src="<?= BASEURL; ?>/js/js-laskarcovid.js"></script>
 
 <!-- Menu Toggle Script -->
 <script>
